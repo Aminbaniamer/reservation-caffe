@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "shabnam";
+  src: url(./asset//fonts/Shabnam.ttf);
+}
+* {
+  box-sizing: border-box;
+  font-family: "Shabnam", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to top left, #6dd5fa, #2980b9);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.form-box {
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-box h2 {
+  text-align: center;
+  color: #333;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+select {
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.row input {
+  flex: 1;
+}
+
+#reservation-btn {
+  padding: 14px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#reservation-btn:hover {
+  background-color: #1c5980;
+}
+
+.reservation-list {
+  border: 1px solid black;
+  background-color: #333;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+}
+.reservation-box {
+  background-color: white;
+  box-shadow: rgba(48, 48, 200, 0.2) 0px 7px 29px 0px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid black;
+}
+.reservationlist-title {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+}

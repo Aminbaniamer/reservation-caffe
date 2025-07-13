@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>restaurant reservation</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <h2>رزرو میز</h2>
+        <form class="reservation-form">
+          <input
+            type="text"
+            placeholder="نام و نام خانوادگی"
+            id="name"
+            required
+          />
+          <input type="number" placeholder="شماره همراه" id="phone" required />
+          <div class="row">
+            <input type="date" id="date" required />
+            <input type="time" id="time" required />
+          </div>
+          <input type="number" placeholder="تعداد نفرات" id="count" required />
+          <button type="button" id="reservation-btn">ثبت رزرو</button>
+        </form>
+      </div>
+      <h3 class="reservationlist-title">لیست رزرو ها</h3>
+      <div class="reservation-list"></div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
