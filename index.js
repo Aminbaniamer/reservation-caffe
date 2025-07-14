@@ -25,8 +25,20 @@ function renderItems() {
         <p><b>تاریخ رزرو</b> : ${item.date}</p>
         <p><b>زمان رزرو</b> : ${item.time}</p>
         <p><b>تعداد نفرات</b> : ${item.count}</p>
+        <button class="delete-btn">🗑  حذف</button>
       </div>`;
   });
+  let deleteBtn = document.querySelectorAll(".delete-btn");
+
+  deleteBtn.forEach((btn, index) => {
+    btn.addEventListener("click", () => deleteReservation(index));
+  });
+  function deleteReservation(index) {
+    const allReserve = getReservItem();
+    allReserve.splice(index, 1);
+    saveReservItem(allReserve);
+    renderItems();
+  }
 }
 function getReservItem() {
   return JSON.parse(localStorage.getItem("reservation")) || [];
@@ -57,5 +69,5 @@ reservationBtn.addEventListener("click", () => {
   current.push(reservInfo);
   saveReservItem(current);
   renderItems();
-  document.querySelector(".reserve-form").reset();
+  document.querySelector(".reservation-form").reset();
 });
