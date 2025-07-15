@@ -20,12 +20,12 @@ function renderItems() {
   all.forEach((item) => {
     reservationList.innerHTML += `
       <div class="reservation-box">
-        <p><b>نام</b> : ${item.name}</p>
-        <p><b>شماره همراه</b>: ${item.phone}</p>
-        <p><b>تاریخ رزرو</b> : ${item.date}</p>
-        <p><b>زمان رزرو</b> : ${item.time}</p>
-        <p><b>تعداد نفرات</b> : ${item.count}</p>
-        <button class="delete-btn">🗑  حذف</button>
+        <p><b>Name</b> : ${item.name}</p>
+        <p><b>Phone number</b>: ${item.phone}</p>
+        <p><b>Date</b> : ${item.date}</p>
+        <p><b>Time</b> : ${item.time}</p>
+        <p><b>Number of people</b> : ${item.count}</p>
+        <button class="delete-btn">Delete 🗑</button>
       </div>`;
   });
   let deleteBtn = document.querySelectorAll(".delete-btn");
